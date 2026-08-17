@@ -17,11 +17,12 @@
 
 ## Applet Workflow & Lifecycle
 - **Planning First:** Before writing code for a new applet, ask 2–3 brief questions to understand the goal, target user, and key interactions.
+- **Ask for the creator's name:** When someone builds an applet, ask what their name is so it can be recorded on the applet. A job title alone is not enough — get the person's actual name (e.g. "what name should I put on this applet?").
 - **Drafting Strategy:** Draft a `notes/plan.md` inside the applet directory detailing the core goal and required interactions. Wait for approval before coding.
 - **No Per-Applet Passwords:** Never add password protection or login to an individual applet. The only password protection on the site is the site-wide `PASSWORD` set up during initial setup (see `INIT.md`). If someone asks to lock a single applet, explain that protection applies to the whole site only.
 - **Metadata Management:** Every applet directory must maintain a `metadata.json` (or header config) containing:
   - `title`: Name of applet
-  - `creator`: Creator's name (ask for this when creating)
+  - `creator`: The person's actual name (ask for it when creating — a job title alone is not enough)
   - `lastModified`: Current ISO date
   - `lastModifiedBy`: Person modifying the applet
   - `expiryOverride`: `"standard"` (30 days), `"90days"`, or `"permalive"`
