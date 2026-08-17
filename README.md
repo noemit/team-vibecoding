@@ -1,6 +1,6 @@
-# Vibe Coding Prototype Hub
+# Vibe Coding Applet Hub
 
-A GitHub repo non-technical people can open in a coding agent and use like a chatbot. They describe what they want. The agent builds it. When they say **make the link live**, it goes up to [Vercel](https://vercel.com).
+A GitHub repo non-technical people can open in a coding agent and use like a chatbot. They describe what they want. The agent builds it, starts a local preview, and sends a link so they can see it right away. When they say **make the link live**, it goes up to [Vercel](https://vercel.com).
 
 The two files that make this work are [`AGENTS.md`](./AGENTS.md) (how the agent talks and deploys) and [`INIT.md`](./INIT.md) (how it builds the project the first time).
 
@@ -11,7 +11,7 @@ The two files that make this work are [`AGENTS.md`](./AGENTS.md) (how the agent 
 
    > Follow the instructions in `INIT.md`, then commit and push everything to `main`.
 
-3. Connect the repo to [Vercel](https://vercel.com) and deploy it. Optional: set a `PASSWORD` env var if you want the site locked, or `LLM_API` if prototypes will call an AI provider.
+3. Connect the repo to [Vercel](https://vercel.com) and deploy it. Optional: set a `PASSWORD` env var if you want the site locked, or `LLM_API` if applets will call an AI provider.
 4. Invite people as [GitHub collaborators](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository).
 
 They clone the repo (a container or Codespace is fine) and talk to the agent. That is the whole setup.
@@ -20,7 +20,8 @@ They clone the repo (a container or Codespace is fine) and talk to the agent. Th
 
 You do not need to write code, run terminal commands, or learn Git.
 
-- **New prototype:** "I want to build a prototype for a feedback form."
+- **New applet:** "I want to build an applet for a feedback form."
+- **See it:** "Show me" or "Let me see it." The agent should also send a preview link on its own after it builds something.
 - **Change something:** "Make the buttons on the landing page blue."
 - **Put it on the internet:** "Make the link live."
-- **Keep it from expiring:** "I want this prototype to stay live for 90 days."
+- **Keep it from expiring:** "I want this applet to stay live for 90 days."
