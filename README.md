@@ -1,6 +1,8 @@
-# Vibe Coding Applet Hub
+# Team Vibecoding
 
-A GitHub repo non-technical people can open in a coding agent and use like a chatbot. They describe what they want. The agent builds it, starts a local preview, and sends a link so they can see it right away. When they say **make the link live**, it goes up to [Vercel](https://vercel.com).
+Ready to turn your non-technical teams AI-native? Teach them to vibe code in a fun, low risk applet hub and watch what happens!
+
+This repo has all the instructions needed for creating an applet hub that non-technical people can open in a coding agent and use like a chatbot. They describe what they want. The agent builds it, starts a local preview, and sends a link so they can see it right away. When they say **make the link live**, it goes up to [Vercel](https://vercel.com). Note: we recommend Codex for getting started as fast as possible, but this system works with any agent. It was tested with DeepSeek-V4-Flash, Codex and Kimi. It will work for every model.
 
 The two files that make this work are [`AGENTS.md`](./AGENTS.md) (how the agent talks and deploys) and [`INIT.md`](./INIT.md) (how it builds the project the first time).
 
